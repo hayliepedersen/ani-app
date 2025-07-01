@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import AniSearch from "@/components/AniSearch";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
+        <AniSearch />
+        {/* <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
@@ -44,9 +46,9 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
       </main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"
@@ -89,7 +91,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
